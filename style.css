@@ -1,0 +1,93 @@
+body {
+    background-color:  rgb(50, 50, 50);
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.google-container-center {
+    color: white;
+    font-size: 84px;
+    text-align: center;
+    margin: 0;
+    padding: 8px;
+    margin: 0;
+    margin-top: 22vh;
+}
+.searchbar {
+    text-align: center;
+}
+form {
+    padding-top: 25px;
+}
+input[type=search] {
+    border-radius: 50px;
+    font-size: 16px;
+    padding-left: 20px;
+    display: block;
+    max-width: 576px;
+    width: 80%;
+    margin: auto;
+    border: none;
+    height: 7vh;
+}
+.bookmarks {
+    display: flex;
+    max-width: 570px;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.cell-container {
+    box-sizing: border-box;
+    text-align: center;
+    width: 110px;
+    margin-top: 10px;
+    color: white;
+    font-size: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cell-container:hover {
+    background-color: rgb(80, 80, 80);
+}
+.image-container {
+    margin-top: 20px;
+}
+
+.customise {
+    position: fixed;
+    padding: 0.5%;
+    left: 91%;
+    top: 93%;
+    font-size: 14px;
+    color: rgb(137, 169, 224);
+    background-color: rgb(39, 39, 39);
+    border-radius: 25px;
+
+}
+.customise:hover {
+    background-color: rgb(54, 54, 54);
+}
+.customise svg {
+    fill: rgb(114, 161, 243);
+    padding-left: 5px;
+    padding-right: 6px;
+}
+@media screen and (max-width:576px) {
+    .customise span {
+        display: none;
+    }
+    .cell-container {
+        width: 120px;
+    }
+    .customise {
+        padding: 1%;
+    }
+
+    .off {
+        display: none;
+    }
+}
